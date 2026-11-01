@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!--
+  المشروع الثالث: Portfolio عصري (داكن + أخضر) بتفاعل بسيط
+  ---------------------------------------------------------
+  مبني على الأسلوب العام الذي أعجبك (قائمة ثابتة، بطاقات، وضع داكن/فاتح،
+  ظهور تدريجي)، لكن الكود والمحتوى والتفاصيل كلها أصلية ومناسبة لك.
+
+  ابحث عن كلمة TODO لتعدّل: نصوصك، روابطك، وصف المشاريع.
+  الألوان كلها في :root (الداكن) و [data-theme="light"] (الفاتح).
+  النموذج في قسم Contact شكل فقط ولا يرسل رسائل (يحتاج backend لاحقاً).
+-->
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Muhammad | C# Developer</title>
+    <!-- يضيف كلاس js مبكراً: نخفي عناصر الظهور التدريجي فقط إذا كانت JavaScript تعمل -->
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="stylesheet" href="css/style.css">
+  
+
+
+</head>
+
+<body id="top">
+
+  <!-- ===== القائمة ===== -->
+  <header class="nav">
+    <div class="container">
+      <a class="logo" href="#top">MS<span>.</span></a>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="icon-btn" id="theme" aria-label="Toggle light and dark theme">◐</button>
+      <a class="btn hire" href="#contact">Hire me</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== المقدمة ===== -->
+    <div class="avatar"></div>
+    <div class="container hero">
+      <h1>Muhammad Al-Sadaka</h1>
+      <p class="role">C# Developer</p>
+      <!-- TODO: عدّل الوصف -->
+      <p class="lead">I build desktop applications with C# and SQL Server, and I'm learning web development to become a full stack developer.</p>
+      <div class="actions">
+        <a class="btn" href="#projects">View my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+
+      <!-- أرقام صادقة: لا تكتب سنوات خبرة أو مشاريع لم تنجزها -->
+      <div class="grid stats">
+        <div class="card reveal"><strong>C#</strong><span>Primary language</span></div>
+        <div class="card reveal"><strong>2</strong><span>Desktop projects built</span></div>
+        <div class="card reveal"><strong>Web</strong><span>Currently learning</span></div>
+      </div>
+    </div>
+
+    <!-- ===== عني ===== -->
+    <section id="about">
+      <div class="container">
+        <h2 class="reveal">About me</h2>
+        <p class="sub reveal">A junior developer focused on clean structure, databases, and learning in public.</p>
+
+        <div class="card reveal">
+          <h3>Learning path</h3>
+          <!-- TODO: عدّل المحطات والتواريخ كما تريد -->
+          <div class="timeline" style="margin-top: 18px;">
+            <div class="step">
+              <h3>C# desktop development training</h3>
+              <p class="date">Programming Advices</p>
+              <p>Windows Forms, SQL Server, ADO.NET, and 3-tier architecture.</p>
+            </div>
+            <div class="step">
+              <h3>B.Sc. in BAIT</h3>
+              <p class="date">Syrian Virtual University · 2026</p>
+            </div>
+            <div class="step">
+              <h3>Master's in MCS</h3>
+              <p class="date">Syrian Virtual University · In progress</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== المهارات ===== -->
+    <section id="skills">
+      <div class="container">
+        <h2 class="reveal">Tech stack</h2>
+        <p class="sub reveal">Tools I use now, and what I'm adding next.</p>
+
+        <div class="grid">
+          <div class="card reveal">
+            <h3>Desktop</h3>
+            <ul class="chips">
+              <li>C#</li><li>Windows Forms</li><li>3-Tier Architecture</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Data</h3>
+            <ul class="chips">
+              <li>SQL Server</li><li>ADO.NET</li><li>Entity Framework</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3>Web (learning)</h3>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== المشاريع ===== -->
+    <section id="projects">
+      <div class="container">
+        <h2 class="reveal">Selected projects</h2>
+        <p class="sub reveal">Desktop applications with real databases, plus my first web project.</p>
+
+        <div class="grid">
+
+          <article class="card project reveal">
+            <img src="medimanage.png" alt="MediManage screenshot">
+            <div class="body">
+              <h3>MediManage System</h3>
+              <p>Describe what the app does and what you built, in two lines.</p>
+              <span class="meta">C# · SQL Server</span>
+              <a class="btn ghost" href="github.com/Muhammad-sadaka/">View code</a> <!-- TODO: رابط GitHub -->
+            </div>
+          </article>
+
+          <article class="card project reveal">
+             <img src="DVLD.png" alt="MediManage screenshot">
+            <div class="body">
+              <h3>DVLD System</h3>
+              <p>Describe what the app does and what you built, in two lines.</p>
+              <span class="meta">C# · SQL Server</span>
+              <a class="btn ghost" href="github.com/Muhammad-sadaka/">View code</a>
+            </div>
+          </article>
+
+          <article class="card project reveal">
+            <div class="shot">You are looking at it</div>
+            <div class="body">
+              <h3>This portfolio</h3>
+              <p>My first web project, built with HTML, CSS, and a little JavaScript.</p>
+              <span class="meta">HTML · CSS · JS</span>
+              <a class="btn ghost" href="github.com/Muhammad-sadaka/">View code</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <h2 class="reveal">Let's work together</h2>
+        <p class="sub reveal">I'm looking for my first role as a software developer.</p>
+
+        <div class="contact-wrap">
+          <div class="card reveal">
+            <h3>Reach me</h3>
+            <ul class="contact-list">
+              <li>Email: <a href="mailto:muhammadsadka95@gmail.com">muhammadsadka95@gmail.com</a></li>
+              <li>Phone: <a href="">+963983873645</a></li>
+              <li>Address: <a href="">Damascus, Syria</a></li>
+              <li>GitHub: <a href="github.com/Muhammad-sadaka">github.com/Muhammad-sadaka</a></li>
+              <li>LinkedIn: <a href="linkedin.com/in/muhammad-al-sadaka-338956323">linkedin.com/in/muhammad-al-sadaka-338956323</a></li>
+            </ul>
+          </div>
+
+          <div class="card reveal">
+            <h3>Send a message</h3>
+            <form style="margin-top: 12px;">
+              <input type="text" placeholder="Your name">
+              <input type="email" placeholder="Your email">
+              <textarea rows="4" placeholder="Your message"></textarea>
+              <button class="btn" type="button">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Muhammad</div>
+  </footer>
+
+  <a class="top" href="#top" aria-label="Back to top">↑</a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
